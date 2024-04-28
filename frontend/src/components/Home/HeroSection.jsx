@@ -18,7 +18,7 @@ const HeroSection = () => {
     {
       id: 3,
       title: "2,34,200",
-      subTitle: "Job Seekers",
+      subTitle: "Student",
       icon: <FaUsers />,
     },
     {
@@ -33,13 +33,11 @@ const HeroSection = () => {
       <div className="heroSection">
         <div className="container">
           <div className="title">
-            <h1>Find a job that suits</h1>
-            <h1>your interests and skills</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              voluptate repellat modi quidem aliquid eaque ducimus ipsa et,
-              facere mollitia!
-            </p>
+            <h2 style={{fontWeight : "700", color : "#D34D4D", fontSize : "3rem" , marginBottom : '1rem'}}>
+              Designed for "Technical Student"
+            </h2>
+            <h3 style={{color : "#564DD3"}}>Find a job that suits</h3>
+            <h3 style={{color : "#564DD3"}}> your interests and skills</h3>
           </div>
           <div className="image">
             <img src="/heroS.jpg" alt="hero" />

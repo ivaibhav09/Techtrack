@@ -19,12 +19,19 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: [true, "Please provide your phone number."],
     },
-    password:{
+    password: {
         type: String,
         required: [true, "Please provide your password!"],
-        minLength: [8, "Password must contain atleast 8 character!"],
-        maxLength: [30, "Password cannot exceed 32 character!"],
-        select: false
+        minLength: [8, "Password must contain at least 8 characters!"],
+        maxLength: [32, "Password cannot exceed 32 characters!"],
+        select: false,
+        validate: {
+            validator: function(value) {
+                // Regular expression to check for the presence of at least one special character
+                return /[!@#$%^&*]/.test(value);
+            },
+            message: "Use special characters in your password!"
+        }
     },
     role:{
        type: String,

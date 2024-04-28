@@ -14,7 +14,7 @@ const PopularCategories = () => {
   const categories = [
     {
       id: 1,
-      title: "Graphics & Design",
+      title: "Data Analyst",
       subTitle: "305 Open Positions",
       icon: <MdOutlineDesignServices />,
     },
@@ -38,7 +38,7 @@ const PopularCategories = () => {
     },
     {
       id: 5,
-      title: "Account & Finance",
+      title: "Cloud Engineer",
       subTitle: "150 Open Positions",
       icon: <MdAccountBalance />,
     },
@@ -50,7 +50,7 @@ const PopularCategories = () => {
     },
     {
       id: 7,
-      title: "Video Animation",
+      title: "Data Science Engineer",
       subTitle: "50 Open Positions",
       icon: <MdOutlineAnimation />,
     },

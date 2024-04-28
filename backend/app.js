@@ -7,6 +7,7 @@ import userRouter from "./routes/userRouter.js";
 import internshipRouter from "./routes/internshipRouter.js"
 import applicationRouter from "./routes/applicationRouter.js";
 import jobRouter from "./routes/jobRouter.js";
+import postRouter from "./routes/postRouter.js"
 import {dbConnection} from './database/dbConnection.js';
 import { errorMiddleware } from "./middlewares/error.js";
 
@@ -35,6 +36,7 @@ app.use(fileUpload({
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/application', applicationRouter);
 app.use('/api/v1/job', jobRouter);
+app.use('/api/v1/community', postRouter);
 app.use('/api/v1/internship', internshipRouter);
 app.use(errorMiddleware);
 

@@ -26,7 +26,7 @@ const MyApplications = () => {
           });
       } else {
         axios
-          .get("http://localhost:4000/api/v1/application/jobseeker/getall", {
+          .get("http://localhost:4000/api/v1/application/student/getall", {
             withCredentials: true,
           })
           .then((res) => {
@@ -70,7 +70,7 @@ const MyApplications = () => {
 
   return (
     <section className="my_applications page">
-      {user && user.role === "Job Seeker" ? (
+      {user && user.role === "Student" ? (
         <div className="container">
           <h1>My Applications</h1>
           {applications.length <= 0 ? (
@@ -93,7 +93,7 @@ const MyApplications = () => {
         </div>
       ) : (
         <div className="container">
-          <h1>Applications From Job Seekers</h1>
+          <h1>Applications From Student</h1>
           {applications.length <= 0 ? (
             <>
               <h4>No Applications Found</h4>

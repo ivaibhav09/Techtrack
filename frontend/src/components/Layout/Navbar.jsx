@@ -39,6 +39,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link to={"/community/allpost"} onClick={() => setShow(false)}>
+              COMMUNITY CHAT
+            </Link>
+          </li>
+          <li>
             <Link to={"/job/getall"} onClick={() => setShow(false)}>
               ALL JOBS
             </Link>
